@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-Drink up/Pods-Drink up-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
