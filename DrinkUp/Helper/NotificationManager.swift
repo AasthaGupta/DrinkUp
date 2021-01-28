@@ -26,7 +26,7 @@ internal class NotificationManager: NSObject {
     private override init() {
         super.init()
 
-        self.center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+        self.center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, _) in
             if granted {
                 self.center.removeAllDeliveredNotifications()
                 print("Notification permission granted by user")

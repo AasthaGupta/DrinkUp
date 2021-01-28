@@ -11,7 +11,7 @@ import RealmSwift
 
 struct ContentView: View {
     @EnvironmentObject var userStore: UserStore
-    
+
     @ObservedObject var todayData: WaterTracker = DataManager.shared.getData()
     var body: some View {
         NavigationView {

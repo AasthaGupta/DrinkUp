@@ -53,10 +53,9 @@ internal class DataManager {
         return self.userInfo
     }
 
-
     func save() {
         do {
-            try realm.write{
+            try realm.write {
                 self.todayData.progress = self.todayData.progress + 1
             }
         } catch {
