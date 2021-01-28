@@ -34,5 +34,5 @@ jobs:
       run: xcodebuild -workspace DrinkUp.xcworkspace -scheme DrinkUp -destination "platform=iOS Simulator,OS=14.1,name=iPhone 12 Pro Max" -enableCodeCoverage YES -resultBundlePath .build/Coverage CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO clean build test
     - name: Code coverage
       run: xcrun xccov view --report --files-for-target DrinkUp.app .build/Coverage.xcresult
-    - name: Code Coverage
+    - name: Codecov
       run: bash <(curl -s https://codecov.io/bash) -J 'DrinkUp'
